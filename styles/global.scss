@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Regular"), local("ProximaNova-Regular"),
+    url("/fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Regular.woff") format("woff"),
+    url("/fonts/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-SemiBold"), local("ProximaNova-Bold"),
+    url("/fonts/ProximaNova-SemiBold.woff2") format("woff2"),
+    url("/fonts/ProximaNova-SemiBold.woff") format("woff"),
+    url("/fonts/ProximaNova-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Bold"), local("ProximaNova-Bold"),
+    url("/fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Bold.woff") format("woff"),
+    url("/fonts/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "ProximaNova";
+  src: local("ProximaNova-Black"), local("ProximaNova-Bold"),
+    url("/fonts/ProximaNova-Black.woff2") format("woff2"),
+    url("/fonts/ProximaNova-Black.woff") format("woff"),
+    url("/fonts/ProximaNova-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+.firebase-emulator-warning {
+  display: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "ProximaNova", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Helvetica Neue", "Ubuntu", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3em;
+
+  @media screen and (max-width: 650px) {
+    font-size: 2em;
+  }
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.signin {
+  @media screen and (max-width: 650px) {
+    margin: 0 !important;
+  }
+}
+
+.blocks {
+  @media screen and (max-width: 650px) {
+    flex-direction: column !important;
+  }
+}
+
+.noafter {
+  &::after {
+    display: none;
+  }
+  &::before {
+    display: none;
+  }
+}
